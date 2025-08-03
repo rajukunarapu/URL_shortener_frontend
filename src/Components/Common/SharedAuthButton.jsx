@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import AuthContext from "../Context/AuthContext";
-import { logoutAPI } from "../Services/AuthServices/logoutAPI";
+import AuthContext from "../../Context/AuthContext";
+import { logoutAPI } from '../../Services/AuthServices/logoutAPI'
 
 const SharedAuthButton = ({label, mode,  setlogoutAlertShow}) => {
     // Using useNavigate hook to programmatically navigate

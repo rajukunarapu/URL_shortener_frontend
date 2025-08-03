@@ -1,10 +1,12 @@
 import React from 'react'
+import SignUpCard from '../Components/AuthComponents/Wrappers/SignUpCard'
+import NavBar from '../Layouts/NavBar'
 
 const SignupPage = () => {
   return (
     <>
-        <h1>Signup Page</h1>
-        <p>Please fill in the form to create an account.</p>
+        <NavBar/>
+        <SignUpCard/>
     </> 
   )
 }

@@ -1,9 +1,12 @@
 import React from 'react'
+import NavBar from '../Layouts/NavBar'
+import LoginCard from '../Components/AuthComponents/Wrappers/LoginCard'
 
 const LoginPage = () => {
   return (
     <>
-        <h1>Login Page</h1>
+        <NavBar/>
+        <LoginCard/>
     </>
   )
 }

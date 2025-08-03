@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { Link, useLocation } from "react-router-dom";
 import AuthContext from "../Context/AuthContext";
-import SharedAuthButton from "../Components/SharedAuthButton";
+import SharedAuthButton from "../Components/Common/SharedAuthButton";
 import MuiAlert from "@mui/material/Alert";
 
 const NavBar = () => {
@@ -27,6 +27,7 @@ const NavBar = () => {
   // Navigation links for the navbar
   const navLinks = [
     { id: 1, name: "Home", to: "/" },
+    { id: 2, name: "Stats", to: "/stats" },
   ];
 
   return (
