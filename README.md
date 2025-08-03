@@ -1,12 +1,77 @@
-# React + Vite
+📄 Frontend README (README.md)
+markdown
+Copy
+Edit
+# 🌐 URL Shortener Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the **React.js frontend** for the URL Shortener project.  
+It allows users to:
+- ✅ Sign up & log in
+- ✅ Shorten long URLs into clean short links
+- ✅ View shortened URLs in a responsive table
+- ✅ Check stats (click counts, created date, etc.)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- ⚛ **React.js** with Hooks
+- 🎨 **Material UI** for a modern, responsive UI
+- 🔐 **Authentication** (Signup/Login) with JWT (stored in cookies)
+- 📊 **Stats page** for every shortened URL
+- 📦 **Axios** for API calls
+- 🌀 **Lazy loading with Suspense** for better performance
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🏗️ Tech Stack
+- **React 18**
+- **Material UI**
+- **Axios**
+- **React Router v6**
+- **Vite** for bundling
+
+---
+
+## ⚙️ Installation & Setup
+```bash
+# Clone repo
+git clone <frontend-repo-url>
+
+# Go into project folder
+cd url-shortener-frontend
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+👉 The app will run on http://localhost:5173 by default.
+
+🔗 Environment Variables
+Create a .env file in the root and add:
+
+env
+Copy
+Edit
+VITE_SERVER_URL=http://localhost:5000
+📂 Folder Structure
+bash
+Copy
+Edit
+src/
+ ├── Components/    # Reusable UI components
+ ├── Layouts/       # NavBar, etc.
+ ├── Pages/         # Home, Login, Signup, Stats
+ ├── Services/      # Axios API calls
+ ├── Context/       # Auth Context
+ ├── AppRoutes.jsx  # Routing setup
+ └── main.jsx
+🤝 AI Acknowledgment
+This project was planned & developed with AI assistance (ChatGPT).
+AI was used for:
+
+📘 Learning best practices (JWT auth, React Router, API integration)
+
+🛠 Planning architecture & folder structure
+
+✍️ Drafting some boilerplate code (later reviewed and customized)
